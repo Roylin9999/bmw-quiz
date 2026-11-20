@@ -1,0 +1,19 @@
+{
+  // ===== 可修改設定 =====
+  "name": "bmw-quiz",                 // 要和 Cloudflare 上的 Worker 名稱一致
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "bmw-quiz-db"   // 改成你在 D1 建立的資料庫名稱
+      // 若部署時說找不到資料庫，加上這行（在 D1 頁面複製 Database ID）：
+      // ,"database_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+    }
+  ]
+}
