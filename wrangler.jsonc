@@ -11,9 +11,8 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "bmw-quiz-db"   // 改成你在 D1 建立的資料庫名稱
-      // 若部署時說找不到資料庫，加上這行（在 D1 頁面複製 Database ID）：
-      // ,"database_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+      "database_name": "bmw-quiz-db",                         // D1 資料庫名稱
+      "database_id": "21451877-dcdc-4f7d-89f1-aaa881a2b8fb"   // D1 頁面上的 Database ID
     }
   ]
 }
